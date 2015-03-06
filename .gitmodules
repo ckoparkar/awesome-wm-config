@@ -1,0 +1,9 @@
+[submodule "awesome-copycats"]
+	path = awesome-copycats
+	url = https://github.com/copycat-killer/awesome-copycats.git
+[submodule "awesompd"]
+	path = awesompd
+	url = https://github.com/alexander-yakushev/awesompd.git
+[submodule "lain"]
+	path = lain
+	url = https://github.com/copycat-killer/lain.git
