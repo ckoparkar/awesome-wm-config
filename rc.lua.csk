@@ -253,7 +253,7 @@ vicious.register(cpuwidget_graph, vicious.widgets.cpu, "$1", 1)
   musicwidget.album_cover_size = 50
   -- This option is necessary if you want the album covers to be shown
   -- for your local tracks.
-  musicwidget.mpd_config = "/home/username/.mpdconf"
+  musicwidget.mpd_config = "/home/cskksc/.mpd/mpd.conf"
   -- Specify the browser you use so awesompd can open links from
   -- Jamendo in it.
   musicwidget.browser = "firefox"
