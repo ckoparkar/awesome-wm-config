@@ -12,7 +12,6 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 local vicious   = require("vicious")
 
-require("volume")
 local scratch   = require("scratch")
 -- local yawn      = require("yawn")
 local lain      = require("lain")
