@@ -4,9 +4,6 @@
 [submodule "awesompd"]
 	path = awesompd
 	url = https://github.com/alexander-yakushev/awesompd.git
-[submodule "lain"]
-	path = lain
-	url = https://github.com/copycat-killer/lain.git
 [submodule "vicious"]
 	path = vicious
 	url = http://git.sysphere.org/vicious
