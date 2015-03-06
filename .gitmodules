@@ -4,3 +4,6 @@
 [submodule "vicious"]
 	path = vicious
 	url = http://git.sysphere.org/vicious
+[submodule "awesompd"]
+	path = awesompd
+	url = https://github.com/cskksc/awesompd.git
