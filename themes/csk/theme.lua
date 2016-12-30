@@ -47,8 +47,8 @@ else
 end
 --}}}
 
-theme.font                          = "Tamsyn 10.5"
-theme.taglist_font                  = "Tamsyn 10"
+theme.font                          = "Monaco 16"
+theme.taglist_font                  = "Monaco 16"
 
 theme.fg_normal                     = "#FFFFFF"
 theme.fg_focus                      = "#0099CC"
