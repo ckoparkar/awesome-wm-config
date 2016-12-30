@@ -282,8 +282,19 @@ vicious.register(cpuwidget_graph, vicious.widgets.cpu, "$1", 1)
 
 -----------------------------------------------------------------------------------------
 
-nettxt = wibox.widget.textbox()
-vicious.register(nettxt, vicious.widgets.mem, blue .. "  NET : " .. coldef, 5)
+wifitxt = wibox.widget.textbox()
+vicious.register(wifitxt, vicious.widgets.wifi,
+                 function(widget, args)
+                   if args["{link}"] == 0 then
+                     return " " .. red .. "n/a" .. coldef .. " "
+		   else
+                     return "" .. blue .. string.format(" %s ", args["{ssid}"] .. coldef .. " ")
+		   end
+		 end, 10, "wlp3s0")
+
+
+-- nettxt = wibox.widget.textbox()
+-- vicious.register(nettxt, vicious.widgets.net, blue .. "  NET : " .. coldef, 5)
 
 netwidget = wibox.widget.background(lain.widgets.net({
    settings = function()
@@ -442,7 +453,7 @@ for s = 1, screen.count() do
     bottom_left_layout:add(memwidget)
     bottom_left_layout:add(first)
     bottom_left_layout:add(spr)
-    bottom_left_layout:add(nettxt)
+    bottom_left_layout:add(wifitxt)
     bottom_left_layout:add(netwidget)
     bottom_left_layout:add(first)
     bottom_left_layout:add(spr)
